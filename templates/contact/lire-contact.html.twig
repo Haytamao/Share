@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{parent()}}Lire contact{% endblock %}
+{% block body %}
+<h1 class="text-center text-primary mt-4 pt-4 display-1 fw-bold"> Lire contact</h1>
+<br/>{{contact.nom}}{{contact.sujet}}{{contact.email}}{{ contact.dateEnvoi | date("d-m-Y à H:i:s") }}
+{% endblock %}
